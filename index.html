@@ -342,8 +342,18 @@
          </li>
       </ul>
       </div>
-      <div>
+      <div class="footer-email">
          <p class="icon-title">Подпишитесь на рассылку</p>
+         <form class="email-form" name="email-form">
+            <label >
+                <input class="label-form" type="email" name="email" placeholder="E-mail" />
+            </label>
+            <button class="button" type="submit">Подписаться 
+                <svg class="icon-btn" width="24px" height="24px" > 
+                    <use href="./images/icons/sprite.svg#icon-send"></use>
+                </svg>
+            </button>
+        </form>
       </div>
      </div> 
     </footer>
@@ -383,10 +393,14 @@
          </svg></span></label>
 
          <label class="form-field">Комментарий
-         <textarea name="feedback" class="form-text" placeholder="Введите текст"></textarea>
+         <textarea class="form-text" name="feedback"  placeholder="Введите текст"></textarea>
          </label>
-         <input type="checkbox" name="name-check" id="checkbox" class="modal-form-check">
-         <label for="checkbox">Соглашаюсь с рассылкой и принимаю <a href="" class="">Условия договора</a></label>
+         
+         <label class="modal-form" >
+            <input class="modal-form-check" type="checkbox" name="agreement" value="Соглашаюсь с рассылкой и принимаю" /> 
+            <span class="test"></span>
+            <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="form-link" href="#">Условия договора</a></span>
+        </label>
          <button class="button" type="submit">Отправить</button>
       </form>
 
